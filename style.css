@@ -8,6 +8,7 @@
 
 .logo {
     display: flex;
+    align-items: center;
 }
 
 .logo img{
@@ -49,14 +50,33 @@ nav .nav-list{
         
 }
 
+.nav-list .icon{
+    width: 20%;
+    height: 10%;
+}
 
  nav a{
-    display: block;
+    display: flex;
     color:rgb(102, 99, 99);
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 10px;
+    gap: 5px;
+    align-items: center;
     
+}
+
+.header .icon {
+    /* width: 2rem; */
+    display: flex;
+    align-items: center;
+    /* margin-right: 10px; */
+    /* padding-top: 5px; */
+}
+
+.header img{
+    width: 3rem;
+    margin-right: 10px;
 }
 
 
@@ -99,7 +119,7 @@ nav ul li{
         rgba(94, 234, 212, 0.6),
         rgba(20, 184, 166, 0.6)
     ),
-    url(./img/worker_image.jpg);
+    url('./img/worker_image.jpg');
 
 background-size: cover;
 background-position: center;
