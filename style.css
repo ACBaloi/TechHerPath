@@ -32,6 +32,31 @@ span {
 nav ul{
     list-style: none;
 }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: rgba(255,255,255,0.9);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+}
+
+.hamburger {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+
 
 nav{
     display: flex;
@@ -324,4 +349,30 @@ background-position: center;
 .footerBoxes .item{
     width: 100%;
 }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+        display: none;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Mostrar menu quando checkbox está selecionado */
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
 }
