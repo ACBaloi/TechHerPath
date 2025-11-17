@@ -41,6 +41,7 @@ nav{
     background-color: rgba(255,255,255,0.9);
     position: sticky;
     top: 0; 
+    width: 100%;
 }
 
 nav .nav-list{
@@ -53,11 +54,12 @@ nav .nav-list{
 .nav-list .icon{
     width: 20%;
     height: 10%;
+  
 }
 
  nav a{
     display: flex;
-    color:rgb(102, 99, 99);
+    color:black;
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 10px;
@@ -70,6 +72,7 @@ nav .nav-list{
     /* width: 2rem; */
     display: flex;
     align-items: center;
+
     /* margin-right: 10px; */
     /* padding-top: 5px; */
 }
